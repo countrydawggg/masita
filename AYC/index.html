@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Front Page Layout</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        .header {
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #ddd;
+        }
+        .header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .header h3 {
+            margin: 0;
+        }
+        .content {
+            padding: 15px;
+        }
+        .content video {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .caption {
+            font-size: 14px;
+            color: #555;
+        }
+        .footer {
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-top: 1px solid #ddd;
+        }
+        .footer button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            background-color: #1877f2;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .footer button:hover {
+            background-color: #155bc7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="masii.jpg" alt="Profile Picture">
+            <h3>Masita Mara</h3>
+        </div>
+        <div class="content">
+            <video controls>
+                <source src="masi.mov" type="video/mp4">
+                Your browser does not support the video tag okie.
+            </video>
+            <p class="caption">
+                Greetings everyone,<br><br>
+                I am Mara Masita, a candidate from Cambodia. This is my submission video.<br><br>
+                <strong>Name:</strong> Mara Masita<br>
+                <strong>Age:</strong> 21 years old<br>
+                <strong>Faculty:</strong> Software Engineering<br>
+                <strong>Academic Year:</strong> 2nd year student<br>
+                <strong>University:</strong> Beltei International University<br><br>
+                <strong>Social Media Links:</strong><br>
+                <a href="https://www.tiktok.com/@lucasgirlfriend123?_t=ZS-8t3i0LCQdXU&_r=1" target="_blank" style="text-decoration: none; margin-right: 10px;">
+                    <i class="fab fa-tiktok"></i> TikTok
+                </a><br>
+                <a href="https://www.facebook.com/share/1Fsk9x3tW6/?mibextid=wwXIfr" target="_blank" style="text-decoration: none; margin-right: 10px;">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a><br>
+                <a href="https://www.instagram.com/nompangbayon?igsh=eHNydHgwNjgzamJr&utm_source=qr" target="_blank" style="text-decoration: none; margin-right: 10px;">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </p>
+            
+        </div>
+        <div class="footer">
+            <button onclick="likePost()">Like</button>
+        </div>
+    </div>
+
+    <script>
+        function likePost() {
+            alert('You liked this post!');
+        }
+    </script>
+</body>
+</html>
